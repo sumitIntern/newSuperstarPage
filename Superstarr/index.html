@@ -83,7 +83,38 @@ header {
   display: block;
 }
 
-.image-container img {
+.image-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+}
+
+.image-container .phone-img {
+  position: absolute;
+  width: 23.3%;
+  top: 25%;
+  right: 16%;
+}
+
+.l-gradient {
+  height: 100%;
+  position: absolute;
+  width: 98%;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 17.22%, rgba(248, 248, 248, 0.637597) 39.58%, rgba(243, 243, 243, 0.2) 56.67%, rgba(217, 217, 217, 0) 100%, rgba(255, 255, 255, 0) 100%) ;
+}
+  
+
+/* .image-container > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 17.22%, rgba(248, 248, 248, 0.637597) 39.58%, rgba(243, 243, 243, 0.2) 56.67%, rgba(217, 217, 217, 0) 100%, rgba(255, 255, 255, 0) 100%);
+} */
+
+.banner-img {
   width: 100%;
   height: auto;
   display: block;
@@ -588,7 +619,9 @@ margin: 20px; */
 
     <main>
       <div class="image-container">
-        <img src="Header Image.png" alt="Description of the image" />
+        <div class="l-gradient"></div>
+        <img class="banner-img" src="Banner.png" alt="Description of the image" />
+        <img class="phone-img" src="phone.png" alt="Description of the image" />
         <div class="image-area">
             <div class="text-img-area">
           <div class="image-text">Superstarr</div>
